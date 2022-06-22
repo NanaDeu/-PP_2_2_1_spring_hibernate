@@ -5,9 +5,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "cars")
 public class Car {
-  //  @Column(name = "model")
+    @Column(name = "model")
     private String model;
-    //@Column(name = "series")
+    @Column(name = "series")
     private int series;
 
     @OneToOne(mappedBy = "car")
